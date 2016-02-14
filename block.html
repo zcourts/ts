@@ -1,0 +1,239 @@
+<div id="portfolioSheetWrapper">
+
+<header id="project">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h1>Block Lessons</h1>
+
+                <p class="date">Information & Booking</p>
+            </div>
+            <div class="col-md-2">
+                <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- main content -->
+<section class="content">
+<div class="container">
+<section class="row">
+    <div class="col-md-12">
+        <h2>Choose manual or automatic to begin booking</h2>
+    </div>
+    <div class="col-md-12">
+        <div class="jumbotron">
+            <div class="container">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post"><!--//--><input
+                        type="hidden" name="cmd" value="_xclick"> 
+                        <input type="hidden" name="business" value="tydrivingschool@hotmail.co.uk">
+                    <input type="hidden" name="item_name" id="item_name" value="Deposit for "> <input
+                            type="hidden" name="currency_code" value="GBP"> <input type="hidden"
+                                                                                   name="button_subtype"
+                                                                                   value="services"> <input
+                            type="hidden" name="no_note" value="0"> <input type="hidden" name="cn"
+                                                                           value="Special requests?"> <input
+                            type="hidden" name="return"
+                            value="http://www.tydrivingschool.co.uk/thank-you-for-your-order/">
+                    <script type="text/javascript">function setText(option) {
+                        console.log(option);
+                        var sel = document.getElementById("item_name");
+                        sel.value += option.replace("ï¿½", "&pound;");
+                    }
+                    </script>
+                    <!--//-->
+                    <table style="float: left;">
+                        <tbody>
+                        <tr>
+                            <td><select style="width:225px;" name="amount"
+                                        onchange="setText(this.options[this.selectedIndex].text)">
+                                <option value="">Please select driving course.......</option>
+                                <option value="87.82">£87.82 -Booking Deposit for 11Hr driving course
+                                </option>
+                                <option value="118.13">£118.13 -Booking Deposit for 15Hr driving course
+                                </option>
+                                <option value="139.80">£139.80 -Booking Deposit for 18Hr driving course
+                                </option>
+                                <!--<option value="150.87">&pound;150.87 -Booking Deposit for 20Hr driving course</option>
+                                            -->
+                                <option value="173.50">£173.50 -Booking Deposit for 23Hr driving course
+                                </option>
+                                <!--<option value="185.83">&pound;185.83 -Booking Deposit for 25Hr driving course</option>
+                                            -->
+                                <option value="197.64">£197.64 -Booking Deposit for 27Hr driving course
+                                </option>
+                                <option value="234.19">£234.19 -Booking Deposit for 33Hr driving course
+                                </option>
+                                <option value="261.19">£261.19 -Booking Deposit for 38Hr driving course
+                                </option>
+                                <option value="286.24">£286.24 -Booking Deposit for 43Hr driving course
+                                </option>
+                                <option value="82.00">£82.00 -Booking Deposit for Practial test</option>
+                                <option value="60.00">£60.00 -Booking Deposit for 4Hr driving course
+                                </option>
+                                <option value="48.00">£48.00 -Booking Deposit for Theory test</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="btn btn-lg"><i class="icon-flash"></i>Book now</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb40 row">
+    <div class="col-md-6">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th><h2>Manual Prices</h2></th>
+            </tr>
+            <tr>
+                <th>No. Lessons</th>
+                <th>Rate per hour</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>5</td>
+                <td>£22</td>
+                <td>£110</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>£21.50</td>
+                <td>£215</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>£21.40</td>
+                <td>£321.00</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>£21.20</td>
+                <td>£424.00</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>£20.90</td>
+                <td>£522.50</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>£20.50</td>
+                <td>£615.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th><h2>Automatic Prices</h2></th>
+            </tr>
+            <tr>
+                <th>No. Lessons</th>
+                <th>Rate per hour</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>5</td>
+                <td>£23.50</td>
+                <td>£117.50</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>£23.00</td>
+                <td>£230</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>£22.90</td>
+                <td>£343.50</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>£22.70</td>
+                <td>£454.00</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>£22.40</td>
+                <td>£560.00</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>£22.20</td>
+                <td>£666.00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</div>
+</section>
+
+<!-- end main content -->
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-10">
+                <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+
+        $('#bTab a').click(function (e) {
+            $(this).tab('show');
+            e.preventDefault();
+        });
+
+        $('.dropdown-toggle').dropdown();
+
+        $('.dropdown-menu a').click(function (e) {
+            $('li.active').removeClass('open');
+            e.preventDefault();
+        });
+        $(".accordion-toggle").click(function (e) {
+            var $target = $(this).parent().parent().parent().find('.panel-collapse');
+
+            if ($target.hasClass('in')) {
+                $target.collapse('hide');
+            } else {
+                $('.panel-collapse.in').collapse('hide');
+                $target.collapse('show');
+            }
+            e.preventDefault();
+        });
+
+        $('.close').click(function (e) {
+            $(this).parent('.alert').alert('close');
+            e.preventDefault();
+        });
+
+    });
+
+
+</script>

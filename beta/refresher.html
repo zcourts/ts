@@ -1,0 +1,176 @@
+<div id="portfolioSheetWrapper">
+
+    <header id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1>Refresher Courses</h1>
+
+                    <p class="date">Information & Booking</p>
+                </div>
+                <div class="col-md-2">
+                    <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <section class="content">
+        <div class="container">
+            <section class="row">
+                <div class="col-md-12">
+                    <h2>Not driven for a while? A refresher is a good way to get back up and running!</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <div class="container">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post"><!--//--><input
+                                    type="hidden" name="cmd" value="_xclick"> <input type="hidden" name="business"
+                                                                                     value="tyinfo79@gmail.com">
+                                <input type="hidden" name="item_name" id="item_name" value="Deposit for "> <input
+                                        type="hidden" name="currency_code" value="GBP"> <input type="hidden"
+                                                                                               name="button_subtype"
+                                                                                               value="services"> <input
+                                        type="hidden" name="no_note" value="0"> <input type="hidden" name="cn"
+                                                                                       value="Special requests?"> <input
+                                        type="hidden" name="return"
+                                        value="http://www.tydrivingschool.co.uk/thank-you-for-your-order/">
+                                <script type="text/javascript">function setText(option) {
+                                    console.log(option);
+                                    var sel = document.getElementById("item_name");
+                                    sel.value += option.replace("ï¿½", "&pound;");
+                                }
+                                </script>
+                                <!--//-->
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td width="49%" valign="top"><select style="width:350px; float:left;"
+                                                                             name="amount"
+                                                                             onchange="setText(this.options[this.selectedIndex].text)">
+                                            <option value="">Please select driving course.......</option>
+                                            <option value="60.00">£60.00 -Booking Deposit for 2 Hr refresher course
+                                                manual driving course
+                                            </option>
+                                            <option value="115.00">£115.00 -Booking Deposit for 4 Hr refresher course
+                                                Automatic driving course
+                                            </option>
+                                        </select>
+                                            <button class="btn btn-lg"><i class="icon-flash"></i>Book now</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb40 row">
+                <div class="col-md-12">
+                    <h2><span>Got any concerns about getting back on the road? We can help!</span>
+                    </h2>
+                </div>
+                <div class="col-md-6">
+                    <h2>Tailored to you</h2>
+
+                    <p>
+                        Has it been a while since you last drove a car? Just passed but still a little unsure about
+                        certain aspects of driving? Perhaps it's motorway or night driving? Then this refresher course
+                        is perfect for you. Choose a two-hour course for £60 or four hours for just £115 Your T-Y
+                        instructor will tailor the course according to your individual needs and can assist you with:
+                    <ul>
+                        <li>Night driving</li>
+                        <li>Motorway driving</li>
+                        <li>Roundabouts</li>
+                        <li>Parking (reverse manoeuvre)</li>
+                        <li>Traffic signs</li>
+                        <li>Speed awareness</li>
+                    </ul>
+                    The sooner you start; the sooner you’ll be a more confident, safer and aware driver. WHY NOT GET
+                    ON THE ROAD AND Book today. SINGLE LESSON.
+                    <br/>
+                    As much as driving lessons can be a daunting experience, they are a special one too. From the
+                    moment you first get into the car and discover newfound confidence, to loving driving and
+                    passing your test, you can almost taste the freedom and opportunities ahead of you.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Relaxing</h2>
+
+                    <p>
+                        To ensure that all of our learner drivers find the process fun and memorable, our driving
+                        instructors offer a refreshing approach to driving tuition that will make you feel relaxed and
+                        eager to get on the road! Weekly lessons versus an intensive course?
+                        <br/>
+                        Taking just one driving lesson per week will help to spread out the training cost but you will
+                        end up paying far more in the long run and take several months to pass your test. This is
+                        because the first half of the next lesson is often wasted getting to where you were at the end
+                        of the previous one – thus it is like taking two steps forward and one step back. Also if you
+                        are taking weekly lessons without any clear targets to achieve or set test date to aim for the
+                        training losses any urgency and lessons tend to drift off course reducing its effectiveness even
+                        further.
+                        <br/>
+                        This is why intensive and semi-intensive courses are now proving far more popular.
+                        However, to do such courses successfully the training needs to be carefully structured and
+                        expertly delivered so that no time in the car is wasted
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- end main content -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-10">
+                    <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+
+        $('#bTab a').click(function (e) {
+            $(this).tab('show');
+            e.preventDefault();
+        });
+
+        $('.dropdown-toggle').dropdown();
+
+        $('.dropdown-menu a').click(function (e) {
+            $('li.active').removeClass('open');
+            e.preventDefault();
+        });
+        $(".accordion-toggle").click(function (e) {
+            var $target = $(this).parent().parent().parent().find('.panel-collapse');
+
+            if ($target.hasClass('in')) {
+                $target.collapse('hide');
+            } else {
+                $('.panel-collapse.in').collapse('hide');
+                $target.collapse('show');
+            }
+            e.preventDefault();
+        });
+
+        $('.close').click(function (e) {
+            $(this).parent('.alert').alert('close');
+            e.preventDefault();
+        });
+
+    });
+
+
+</script>

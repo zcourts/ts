@@ -1,0 +1,165 @@
+<div id="portfolioSheetWrapper">
+
+    <header id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1>Single Lessons</h1>
+
+                    <p class="date">Information & Booking</p>
+                </div>
+                <div class="col-md-2">
+                    <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <section class="content">
+        <div class="container">
+            <section class="row">
+                <div class="col-md-12">
+                    <h2>Choose manual or automatic to begin booking</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <div class="container">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                <!--New payment form-->
+                                <input type="hidden" name="cmd" value="_xclick">
+                                <!-- You would need to change the 'youremail@domain.com' to your email
+                                address-->
+                                <input type="hidden" name="business" value="tyinfo79@gmail.com">
+                                <input type="hidden" name="item_name" id="item_name" value="Deposit for ">
+                                <input type="hidden" name="currency_code" value="GBP">
+                                <input type="hidden" name="button_subtype" value="services">
+                                <input type="hidden" name="no_note" value="0">
+                                <input type="hidden" name="cn" value="Special requests?">
+                                <input type="hidden" name="return"
+                                       value="http://www.tydrivingschool.co.uk/thank-you-for-your-order/">
+                                <script type="text/javascript">
+                                    function setText(option) {
+                                        console.log(option);
+                                        var sel = document.getElementById("item_name");
+                                        sel.value += option.replace("ï¿½", "&pound;");
+                                    }
+                                </script>
+                                <!--New payment form hidden done-->
+                                <table>
+                                    <tbody>
+
+                                    <tr>
+                                        <td width="49%" valign="top">
+                                            <select style="width:350px; float:left;" name="amount"
+                                                    onchange="setText(this.options[this.selectedIndex].text)">
+                                                <option value="">Please select driving course.......</option>
+                                                <option value="21.00">&pound;21.00 -Booking Deposit for Single lesson manual
+                                                    driving
+                                                    course
+                                                </option>
+                                                <option value="22.50">&pound;22.50 -Booking Deposit for Single lesson
+                                                    Automatic driving
+                                                    course
+                                                </option>
+                                            </select>
+                                            <!--new payment select end-->
+                                            <button class="btn btn-lg"><i class="icon-flash"></i>Book now</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb40 row">
+                <div class="col-md-12">
+                    <h2><span>Auto - &pound;24 ph Manual- &pound;22.50 ph(Please NOTE WE ONLY DO 2 HR LESSONS PER SESSION )</span></h2>
+                </div>
+                <div class="col-md-3">
+                    <h2>Getting started</h2>
+
+                    <p>
+                        You need to be 17 to start learning to drive and have a valid provisional the post office and
+                        send it to the DVLA office (address found on DVLA web) licence before you take your first
+                        driving lessons. Complete a D1 form from with your passport or birth certificate, and a
+                        passport-sized photo. You can also apply online.
+                        Apply for a provisional licence up to three months before your 17th birthday, and you could book
+                        your first driving lesson for the big day!
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h2>What lessons you’ll need </h2>
+
+                    <p>Your instructor will estimate how long you are likely to need after your first lesson. The current average is 45 hours of tuition (Driving Standards Agency average, 2006), with 22 hours of private practice. Two-hour lessons and our tips for practising driving can help you learn faster</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>How Lessons Have Changed</h2>
+                    <p>In the last 10 years, roads, signs, speed limits and the volume of traffic on UK roads have all changed dramatically. Driving lessons and the driving test have had to change to help new drivers cope with more potentially hazardous driving conditions.
+                        Learners need to prove they can handle each area independently before they are considered ready for the practical test.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h2>A new three-part test</h2>
+                    <p>Before you can take a practical driving test, you must have passed a multiple-choice touch-screen theory test, and a video clip hazard perception test.
+                        Pass both at the same time, and you can go on to sit the practical test with its ‘show me, tell me’ vehicle maintenance section.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- end main content -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-10">
+                    <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+
+        $('#bTab a').click(function (e) {
+            $(this).tab('show');
+            e.preventDefault();
+        });
+
+        $('.dropdown-toggle').dropdown();
+
+        $('.dropdown-menu a').click(function (e) {
+            $('li.active').removeClass('open');
+            e.preventDefault();
+        });
+        $(".accordion-toggle").click(function (e) {
+            var $target = $(this).parent().parent().parent().find('.panel-collapse');
+
+            if ($target.hasClass('in')) {
+                $target.collapse('hide');
+            } else {
+                $('.panel-collapse.in').collapse('hide');
+                $target.collapse('show');
+            }
+            e.preventDefault();
+        });
+
+        $('.close').click(function (e) {
+            $(this).parent('.alert').alert('close');
+            e.preventDefault();
+        });
+
+    });
+
+
+</script>
